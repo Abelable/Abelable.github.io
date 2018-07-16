@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-07-16T10:32:32.292Z</updated>
+  <updated>2018-07-16T10:40:59.958Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>外卖平台商家页面（MobileWeb）</title>
+    <link href="http://yoursite.com/2018/07/16/vue-sell/"/>
+    <id>http://yoursite.com/2018/07/16/vue-sell/</id>
+    <published>2018-07-16T10:38:27.747Z</published>
+    <updated>2018-07-16T10:40:59.958Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote><p>项目基于Vue框架开发，模仿饿了么商家页面。<br><br>项目源码：</p></blockquote><h2 id="项目技术栈"><a href="#项目技术栈" class="headerlink" title="项目技术栈"></a>项目技术栈</h2>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;blockquote&gt;
+&lt;p&gt;项目基于Vue框架开发，模仿饿了么商家页面。&lt;br&gt;&lt;br&gt;项目源码：&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;项目技术栈&quot;&gt;&lt;a href=&quot;#项目技术栈&quot; class=&quot;headerlink&quot; title=&quot;项目技术栈&quot;&gt;&lt;/a&gt;项
+      
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>移动端音乐播放器（MobileWeb）</title>
