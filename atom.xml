@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-07-15T23:33:18.784Z</updated>
+  <updated>2018-07-16T10:32:32.292Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -21,18 +21,16 @@
     <link href="http://yoursite.com/2018/07/16/vue-music/"/>
     <id>http://yoursite.com/2018/07/16/vue-music/</id>
     <published>2018-07-15T17:37:15.352Z</published>
-    <updated>2018-07-15T23:33:18.784Z</updated>
+    <updated>2018-07-16T10:32:32.292Z</updated>
     
-    <content type="html"><![CDATA[<blockquote><p>项目基于Vue框架开发，结构及交互模仿QQ音乐播放器，数据来自QQ音乐线上数据。</p></blockquote><h2 id="项目在线预览"><a href="#项目在线预览" class="headerlink" title="项目在线预览"></a>项目在线预览</h2><p><img src="https://i.imgur.com/8MpHAcm.png" alt=""></p><blockquote><p>通过axios抓取的线上数据无法正常显示<br> </p></blockquote><h2 id="项目技术栈"><a href="#项目技术栈" class="headerlink" title="项目技术栈"></a>项目技术栈</h2><h2 id="项目src目录"><a href="#项目src目录" class="headerlink" title="项目src目录"></a>项目src目录</h2><p><img src="https://i.imgur.com/BjmLSZ9.jpg" alt=""></p><h2 id="项目简介"><a href="#项目简介" class="headerlink" title="项目简介"></a>项目简介</h2><h2 id="知识点总结"><a href="#知识点总结" class="headerlink" title="知识点总结"></a>知识点总结</h2><h2 id="学习参考"><a href="#学习参考" class="headerlink" title="学习参考"></a>学习参考</h2>]]></content>
+    <content type="html"><![CDATA[<blockquote><p>项目基于Vue框架开发，结构及交互模仿QQ音乐播放器，数据来自QQ音乐线上数据。<br><br>项目源码：<a href="https://github.com/Abelable/vue-music" target="_blank" rel="noopener">https://github.com/Abelable/vue-music</a></p></blockquote><h2 id="项目在线预览"><a href="#项目在线预览" class="headerlink" title="项目在线预览"></a>项目在线预览</h2><blockquote><p>通过axios抓取的线上数据无法正常显示<br><br><img src="https://i.imgur.com/8MpHAcm.png" alt=""></p></blockquote><h2 id="项目技术栈"><a href="#项目技术栈" class="headerlink" title="项目技术栈"></a>项目技术栈</h2><h2 id="项目src目录"><a href="#项目src目录" class="headerlink" title="项目src目录"></a>项目src目录</h2><p><img src="https://i.imgur.com/BjmLSZ9.jpg" alt=""></p><h2 id="项目简介"><a href="#项目简介" class="headerlink" title="项目简介"></a>项目简介</h2><h2 id="知识点总结"><a href="#知识点总结" class="headerlink" title="知识点总结"></a>知识点总结</h2><h2 id="学习参考"><a href="#学习参考" class="headerlink" title="学习参考"></a>学习参考</h2>]]></content>
     
     <summary type="html">
     
       
       
         &lt;blockquote&gt;
-&lt;p&gt;项目基于Vue框架开发，结构及交互模仿QQ音乐播放器，数据来自QQ音乐线上数据。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2 id=&quot;项目在线预览&quot;&gt;&lt;a href=&quot;#项目在线预览&quot; class=&quot;headerlink&quot; title=&quot;项目在线预
+&lt;p&gt;项目基于Vue框架开发，结构及交互模仿QQ音乐播放器，数据来自QQ音乐线上数据。&lt;br&gt;&lt;br&gt;项目源码：&lt;a href=&quot;https://github.com/Abelable/vue-music&quot; target=&quot;_blank&quot; rel=&quot;no
       
     
     </summary>
