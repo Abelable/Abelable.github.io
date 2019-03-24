@@ -88,7 +88,7 @@
 <meta property="og:site_name" content="Abelable">
 <meta property="og:description" content="HTML和CSS部分实现垂直居中 绝对定位+负外边距 绝对定位+transform 1234567891011121314.wrapper &amp;#123;    position: relative;    width: 200px;    height: 200px;    border: 1px solid black;&amp;#125;.content &amp;#123;    position: abs">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-03-24T16:15:41.934Z">
+<meta property="og:updated_time" content="2019-03-24T16:19:59.005Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="前端知识点整理与回顾">
 <meta name="twitter:description" content="HTML和CSS部分实现垂直居中 绝对定位+负外边距 绝对定位+transform 1234567891011121314.wrapper &amp;#123;    position: relative;    width: 200px;    height: 200px;    border: 1px solid black;&amp;#125;.content &amp;#123;    position: abs">
@@ -326,7 +326,9 @@
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">console</span>.log(<span class="built_in">Object</span>.prototype.toString.call(a) === <span class="string">'[object String]'</span>); </span><br><span class="line"><span class="built_in">console</span>.log(<span class="built_in">Object</span>.prototype.toString.call(b) === <span class="string">'[object Number]'</span>); </span><br><span class="line"><span class="built_in">console</span>.log(<span class="built_in">Object</span>.prototype.toString.call(c) === <span class="string">'[object Array]'</span>); </span><br><span class="line"><span class="built_in">console</span>.log(<span class="built_in">Object</span>.prototype.toString.call(d) === <span class="string">'[object Date]'</span>); </span><br><span class="line"><span class="built_in">console</span>.log(<span class="built_in">Object</span>.prototype.toString.call(e) === <span class="string">'[object Function]'</span>);</span><br></pre></td></tr></table></figure>
 </li>
 <li><p><a href="http://www.runoob.com/jquery/misc-type.html" target="_blank" rel="noopener">jQuery.type()</a></p>
-<h3 id="常用字符串方法"><a href="#常用字符串方法" class="headerlink" title="常用字符串方法"></a>常用字符串方法</h3></li>
+</li>
+</ul>
+<h3 id="常用字符串方法"><a href="#常用字符串方法" class="headerlink" title="常用字符串方法"></a>常用字符串方法</h3><ul>
 <li><code>slice()</code> – 提取字符串的一部分，并返回一个新字符串。</li>
 <li><code>split()</code> – 通过将字符串划分成子串，将一个字符串做成一个字符串数组。</li>
 <li><code>concat()</code> – 将两个或多个字符的文本组合起来，返回一个新的字符串。</li>
@@ -339,7 +341,9 @@
 <li><code>substring()</code> – 返回字符串的一个子串。传入参数是起始位置和结束位置。</li>
 <li><code>substr()</code> - 返回从string的startPos位置，长度为length的字符串</li>
 <li><code>indexOf()</code> – 返回字符串中一个子串第一处出现的索引。如果没有匹配项，返回 -1 。</li>
-<li><code>lastIndexOf()</code> – 返回字符串中一个子串最后一处出现的索引，如果没有匹配项，返回 -1 。<h3 id="常用数组方法"><a href="#常用数组方法" class="headerlink" title="常用数组方法"></a>常用数组方法</h3></li>
+<li><code>lastIndexOf()</code> – 返回字符串中一个子串最后一处出现的索引，如果没有匹配项，返回 -1 。</li>
+</ul>
+<h3 id="常用数组方法"><a href="#常用数组方法" class="headerlink" title="常用数组方法"></a>常用数组方法</h3><ul>
 <li><code>slice()</code> – 从某个已有的数组返回选定的元素</li>
 <li><a href="http://www.w3school.com.cn/jsref/jsref_splice.asp" target="_blank" rel="noopener"><code>splice()</code></a> – 删除元素，并向数组添加新元素。</li>
 <li><code>push()</code> – 向数组的末尾添加一个或更多元素，并返回新的长度。</li>
@@ -357,19 +361,16 @@
 <li><code>map()</code> – 对数组的每一项运行给定函数，返回每次函数调用的结果组成的数组。</li>
 <li><code>every()</code> – 对数组中的每一项运行给定函数，如果该函数对每一项都返回true，则返回true。</li>
 <li><code>some()</code> – 对数组的每一项运行给定参数，如果该函数对任一项返回true，则返回true。以上方法都不会修改数组中的包含的值。</li>
-<li><code>reduce()和reduceRight()</code>    – 缩小数组的方法，这两个方法都会迭代数组的所有项，然后构建一个最终返回的值。<h3 id="数组去重"><a href="#数组去重" class="headerlink" title="数组去重"></a>数组去重</h3><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">return</span> <span class="built_in">Array</span>.from(<span class="keyword">new</span> <span class="built_in">Set</span>(arr)); <span class="comment">//ES6</span></span><br></pre></td></tr></table></figure>
-</li>
+<li><code>reduce()和reduceRight()</code>    – 缩小数组的方法，这两个方法都会迭代数组的所有项，然后构建一个最终返回的值。</li>
 </ul>
 <h3 id="常用的DOM方法和DOM属性"><a href="#常用的DOM方法和DOM属性" class="headerlink" title="常用的DOM方法和DOM属性"></a>常用的DOM方法和DOM属性</h3><ul>
-<li><p>创建节点方法</p>
-<ul>
+<li>创建节点方法<ul>
 <li><code>document.createElement()</code> – 创建一个元素节点</li>
 <li><code>document.createTextNode()</code> – 创建一个文本节点</li>
 <li><code>document.createDocumentFragment()</code> – 创建一个DOM片段</li>
 </ul>
 </li>
-<li><p>获取元素节点方法</p>
-<ul>
+<li>获取元素节点方法<ul>
 <li><code>document.getElementById()</code> – 返回对拥有指定<code>id</code>的第一个对象的引用。</li>
 <li><code>document.getElementsByTagName()</code> – 返回带有指定<code>标签名</code>的对象集合。</li>
 <li><code>document.getElementsByName()</code> – 返回带有指定<code>Name属性</code>的对象集合。</li>
@@ -382,8 +383,7 @@
 <li><code>element.previousSibling</code> – 返回该节点的上一个兄弟节点。</li>
 </ul>
 </li>
-<li><p>操作节点方法</p>
-<ul>
+<li>操作节点方法<ul>
 <li><code>element.appendChild()</code> – 在该节点所有子节点的最后加入一个子节点。</li>
 <li><code>element.insertBefore(new,old)</code> – 在该节点的指定子节点前加入一个子节点。</li>
 <li><code>element.removeChild()</code> – 删除该节点的指定子节点。</li>
@@ -391,15 +391,13 @@
 <li><a href="http://www.w3school.com.cn/jsref/met_node_clonenode.asp" target="_blank" rel="noopener"><code>element.cloneNode(boolean)</code></a> – 复制指定节点并返回。参数可选，默认是 false。</li>
 </ul>
 </li>
-<li><p>操作节点属性方法</p>
-<ul>
+<li>操作节点属性方法<ul>
 <li><code>element.getAttribute()</code> – 获取节点的属性值</li>
 <li><code>element.setAttribute()</code> – 设置节点的属性</li>
 <li><code>element.removeAttribute()</code> – 移除节点的属性</li>
 </ul>
 </li>
-<li><p>常用节点属性</p>
-<ul>
+<li>常用节点属性<ul>
 <li><code>element.nodeName</code> – 其内容是给定节点的名字。</li>
 <li><code>element.nodeType</code> – 返回一个整数，这个数值代表着给定节点的类型。<code>1</code>– 元素节点 <code>2</code>– 属性节点 <code>3</code>– 文本节点</li>
 <li><code>element.nodeValue</code> – 返回给定节点的当前值（字符串）。</li>
@@ -409,7 +407,7 @@
 </ul>
 <h3 id="闭包（作用域）"><a href="#闭包（作用域）" class="headerlink" title="闭包（作用域）"></a>闭包（作用域）</h3><p>1、定义：<a href="https://www.cnblogs.com/qieguo/p/5457040.html" target="_blank" rel="noopener">有权访问另一个函数作用域内变量的函数都是闭包</a>。</p>
 <p>2、滥用闭包，会造成内存泄漏。</p>
-<h3 id="10-原型"><a href="#10-原型" class="headerlink" title="10.原型"></a>10.原型</h3><h3 id="11-this"><a href="#11-this" class="headerlink" title="11.this"></a>11.this</h3><h3 id="12-事件代理"><a href="#12-事件代理" class="headerlink" title="12.事件代理"></a>12.事件代理</h3>
+<h3 id="10-原型"><a href="#10-原型" class="headerlink" title="10.原型"></a>10.原型</h3><h3 id="11-this"><a href="#11-this" class="headerlink" title="11.this"></a>11.this</h3><h3 id="12-事件代理"><a href="#12-事件代理" class="headerlink" title="12.事件代理"></a>12.事件代理</h3><h3 id="数组去重"><a href="#数组去重" class="headerlink" title="数组去重"></a>数组去重</h3><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">return</span> <span class="built_in">Array</span>.from(<span class="keyword">new</span> <span class="built_in">Set</span>(arr)); <span class="comment">//ES6</span></span><br></pre></td></tr></table></figure>
       
     </div>
     
@@ -611,7 +609,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#HTML和CSS部分"><span class="nav-number">1.</span> <span class="nav-text">HTML和CSS部分</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#实现垂直居中"><span class="nav-number">1.1.</span> <span class="nav-text">实现垂直居中</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#JavaScript部分"><span class="nav-number">2.</span> <span class="nav-text">JavaScript部分</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#判断数据类型"><span class="nav-number">2.1.</span> <span class="nav-text">判断数据类型</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#常用字符串方法"><span class="nav-number">2.2.</span> <span class="nav-text">常用字符串方法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#常用数组方法"><span class="nav-number">2.3.</span> <span class="nav-text">常用数组方法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#数组去重"><span class="nav-number">2.4.</span> <span class="nav-text">数组去重</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#常用的DOM方法和DOM属性"><span class="nav-number">2.5.</span> <span class="nav-text">常用的DOM方法和DOM属性</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#闭包（作用域）"><span class="nav-number">2.6.</span> <span class="nav-text">闭包（作用域）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#10-原型"><span class="nav-number">2.7.</span> <span class="nav-text">10.原型</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#11-this"><span class="nav-number">2.8.</span> <span class="nav-text">11.this</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#12-事件代理"><span class="nav-number">2.9.</span> <span class="nav-text">12.事件代理</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#HTML和CSS部分"><span class="nav-number">1.</span> <span class="nav-text">HTML和CSS部分</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#实现垂直居中"><span class="nav-number">1.1.</span> <span class="nav-text">实现垂直居中</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#JavaScript部分"><span class="nav-number">2.</span> <span class="nav-text">JavaScript部分</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#判断数据类型"><span class="nav-number">2.1.</span> <span class="nav-text">判断数据类型</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#常用字符串方法"><span class="nav-number">2.2.</span> <span class="nav-text">常用字符串方法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#常用数组方法"><span class="nav-number">2.3.</span> <span class="nav-text">常用数组方法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#常用的DOM方法和DOM属性"><span class="nav-number">2.4.</span> <span class="nav-text">常用的DOM方法和DOM属性</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#闭包（作用域）"><span class="nav-number">2.5.</span> <span class="nav-text">闭包（作用域）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#10-原型"><span class="nav-number">2.6.</span> <span class="nav-text">10.原型</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#11-this"><span class="nav-number">2.7.</span> <span class="nav-text">11.this</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#12-事件代理"><span class="nav-number">2.8.</span> <span class="nav-text">12.事件代理</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#数组去重"><span class="nav-number">2.9.</span> <span class="nav-text">数组去重</span></a></li></ol></li></ol></div>
             
 
           </div>
