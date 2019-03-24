@@ -88,7 +88,7 @@
 <meta property="og:site_name" content="Abelable">
 <meta property="og:description" content="HTML和CSS部分实现垂直居中 绝对定位+负外边距 绝对定位+transform 1234567891011121314.wrapper &amp;#123;    position: relative;    width: 200px;    height: 200px;    border: 1px solid black;&amp;#125;.content &amp;#123;    position: abs">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-03-24T16:19:59.005Z">
+<meta property="og:updated_time" content="2019-03-24T16:58:14.275Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="前端知识点整理与回顾">
 <meta name="twitter:description" content="HTML和CSS部分实现垂直居中 绝对定位+负外边距 绝对定位+transform 1234567891011121314.wrapper &amp;#123;    position: relative;    width: 200px;    height: 200px;    border: 1px solid black;&amp;#125;.content &amp;#123;    position: abs">
@@ -405,9 +405,22 @@
 </ul>
 </li>
 </ul>
-<h3 id="闭包（作用域）"><a href="#闭包（作用域）" class="headerlink" title="闭包（作用域）"></a>闭包（作用域）</h3><p>1、定义：<a href="https://www.cnblogs.com/qieguo/p/5457040.html" target="_blank" rel="noopener">有权访问另一个函数作用域内变量的函数都是闭包</a>。</p>
-<p>2、滥用闭包，会造成内存泄漏。</p>
-<h3 id="10-原型"><a href="#10-原型" class="headerlink" title="10.原型"></a>10.原型</h3><h3 id="11-this"><a href="#11-this" class="headerlink" title="11.this"></a>11.this</h3><h3 id="12-事件代理"><a href="#12-事件代理" class="headerlink" title="12.事件代理"></a>12.事件代理</h3><h3 id="数组去重"><a href="#数组去重" class="headerlink" title="数组去重"></a>数组去重</h3><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">return</span> <span class="built_in">Array</span>.from(<span class="keyword">new</span> <span class="built_in">Set</span>(arr)); <span class="comment">//ES6</span></span><br></pre></td></tr></table></figure>
+<h3 id="闭包"><a href="#闭包" class="headerlink" title="闭包"></a>闭包</h3><ol>
+<li>定义：<a href="https://www.cnblogs.com/qieguo/p/5457040.html" target="_blank" rel="noopener">有权访问另一个函数作用域内变量的函数都是闭包</a>。</li>
+<li>滥用闭包，会造成内存泄漏。</li>
+</ol>
+<h3 id="原型"><a href="#原型" class="headerlink" title="原型"></a>原型</h3><ul>
+<li>实例、构造函数、原型之间的关系<ul>
+<li>实例通过构造函数加new创建：person = new Person()</li>
+<li>通过构造函数的prototype属性可以访问原型：Person.prototype</li>
+<li>实例的__proto__属性指向原型：person.__proto__ = Person.prototype</li>
+<li>原型的constructor属性指向构造函数：Person.prototype.constructor = Person</li>
+</ul>
+</li>
+<li>原型链：对象与对象之间的直接关系<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">clone</span>(<span class="params">obj</span>) </span>&#123;</span><br><span class="line">	<span class="keyword">return</span> <span class="built_in">Object</span>.creat(obj)</span><br><span class="line">&#125;</span><br><span class="line">a = clone(b); <span class="comment">//</span></span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h3 id="11-this"><a href="#11-this" class="headerlink" title="11.this"></a>11.this</h3><h3 id="12-事件代理"><a href="#12-事件代理" class="headerlink" title="12.事件代理"></a>12.事件代理</h3><h3 id="数组去重"><a href="#数组去重" class="headerlink" title="数组去重"></a>数组去重</h3><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">return</span> <span class="built_in">Array</span>.from(<span class="keyword">new</span> <span class="built_in">Set</span>(arr)); <span class="comment">//ES6</span></span><br></pre></td></tr></table></figure>
       
     </div>
     
@@ -609,7 +622,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#HTML和CSS部分"><span class="nav-number">1.</span> <span class="nav-text">HTML和CSS部分</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#实现垂直居中"><span class="nav-number">1.1.</span> <span class="nav-text">实现垂直居中</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#JavaScript部分"><span class="nav-number">2.</span> <span class="nav-text">JavaScript部分</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#判断数据类型"><span class="nav-number">2.1.</span> <span class="nav-text">判断数据类型</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#常用字符串方法"><span class="nav-number">2.2.</span> <span class="nav-text">常用字符串方法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#常用数组方法"><span class="nav-number">2.3.</span> <span class="nav-text">常用数组方法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#常用的DOM方法和DOM属性"><span class="nav-number">2.4.</span> <span class="nav-text">常用的DOM方法和DOM属性</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#闭包（作用域）"><span class="nav-number">2.5.</span> <span class="nav-text">闭包（作用域）</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#10-原型"><span class="nav-number">2.6.</span> <span class="nav-text">10.原型</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#11-this"><span class="nav-number">2.7.</span> <span class="nav-text">11.this</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#12-事件代理"><span class="nav-number">2.8.</span> <span class="nav-text">12.事件代理</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#数组去重"><span class="nav-number">2.9.</span> <span class="nav-text">数组去重</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#HTML和CSS部分"><span class="nav-number">1.</span> <span class="nav-text">HTML和CSS部分</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#实现垂直居中"><span class="nav-number">1.1.</span> <span class="nav-text">实现垂直居中</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#JavaScript部分"><span class="nav-number">2.</span> <span class="nav-text">JavaScript部分</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#判断数据类型"><span class="nav-number">2.1.</span> <span class="nav-text">判断数据类型</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#常用字符串方法"><span class="nav-number">2.2.</span> <span class="nav-text">常用字符串方法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#常用数组方法"><span class="nav-number">2.3.</span> <span class="nav-text">常用数组方法</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#常用的DOM方法和DOM属性"><span class="nav-number">2.4.</span> <span class="nav-text">常用的DOM方法和DOM属性</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#闭包"><span class="nav-number">2.5.</span> <span class="nav-text">闭包</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#原型"><span class="nav-number">2.6.</span> <span class="nav-text">原型</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#11-this"><span class="nav-number">2.7.</span> <span class="nav-text">11.this</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#12-事件代理"><span class="nav-number">2.8.</span> <span class="nav-text">12.事件代理</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#数组去重"><span class="nav-number">2.9.</span> <span class="nav-text">数组去重</span></a></li></ol></li></ol></div>
             
 
           </div>
@@ -657,7 +670,7 @@
 &nbsp;|&nbsp;
 <div class="theme-info">
   <div class="powered-by"></div>
-  <span class="post-count">博客全站共2.5k字</span>
+  <span class="post-count">博客全站共2.6k字</span>
 </div>
 
         
