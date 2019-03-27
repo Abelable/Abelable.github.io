@@ -89,7 +89,7 @@
 <meta property="og:description" content="HTML和CSS部分实现垂直居中 绝对定位+负外边距 绝对定位+transform 1234567891011121314.wrapper &amp;#123;    position: relative;    width: 200px;    height: 200px;    border: 1px solid black;&amp;#125;.content &amp;#123;    position: abs">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="https://i.imgur.com/pBDopux.png">
-<meta property="og:updated_time" content="2019-03-27T02:42:56.484Z">
+<meta property="og:updated_time" content="2019-03-27T02:53:26.248Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="前端基础整理">
 <meta name="twitter:description" content="HTML和CSS部分实现垂直居中 绝对定位+负外边距 绝对定位+transform 1234567891011121314.wrapper &amp;#123;    position: relative;    width: 200px;    height: 200px;    border: 1px solid black;&amp;#125;.content &amp;#123;    position: abs">
@@ -414,7 +414,7 @@
 <h3 id="原型"><a href="#原型" class="headerlink" title="原型"></a>原型</h3><p><img src="https://i.imgur.com/pBDopux.png" alt=""></p>
 <ul>
 <li>实例、构造函数、原型之间的关系<ul>
-<li>实例与构造函数之间的关系：<br>1.实例通过构造函数加new创建：person = new Person()<br>2.</li>
+<li>实例通过构造函数加new创建：person = new Person()</li>
 <li>通过构造函数的prototype属性可以访问原型：Person.prototype</li>
 <li>实例的__proto__属性指向原型：person.__proto__ = Person.prototype</li>
 <li>原型的constructor属性指向构造函数：Person.prototype.constructor = Person</li>
@@ -432,7 +432,7 @@
 <li><p>常见的4种this场景</p>
 <ul>
 <li><p>默认绑定：</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 直接在全局环境中调用函数,this指向全局对象，严格模式下返回undefined</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">foo</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">  <span class="built_in">console</span>.log(<span class="keyword">this</span>.a);</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">var</span> a = <span class="number">6</span>;</span><br><span class="line">foo() <span class="comment">// 6</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 直接在全局环境中调用函数，this指向全局对象，严格模式下返回undefined</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">foo</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">  <span class="built_in">console</span>.log(<span class="keyword">this</span>.a);</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">var</span> a = <span class="number">6</span>;</span><br><span class="line">foo() <span class="comment">// 6</span></span><br></pre></td></tr></table></figure>
 </li>
 <li><p>上下文对象：</p>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//调用对象的方法</span></span><br><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">foo</span>(<span class="params"></span>) </span>&#123;</span><br><span class="line">  <span class="built_in">console</span>.log(<span class="keyword">this</span>.a);</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">var</span> obj = &#123;</span><br><span class="line">  a: <span class="number">16</span>,</span><br><span class="line">  foo: foo</span><br><span class="line">&#125;;</span><br><span class="line">obj.foo(); <span class="comment">// 16</span></span><br></pre></td></tr></table></figure>
