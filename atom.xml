@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-03-25T09:48:39.877Z</updated>
+  <updated>2019-03-27T01:26:57.825Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>前端常用API及常用场景函数封装</title>
+    <link href="http://yoursite.com/2019/03/27/%E5%89%8D%E7%AB%AF%E5%B8%B8%E7%94%A8API%E5%8F%8A%E5%B8%B8%E7%94%A8%E5%9C%BA%E6%99%AF%E5%87%BD%E6%95%B0%E5%B0%81%E8%A3%85/"/>
+    <id>http://yoursite.com/2019/03/27/前端常用API及常用场景函数封装/</id>
+    <published>2019-03-27T01:21:19.000Z</published>
+    <updated>2019-03-27T01:26:57.825Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="类型判断函数封装"><a href="#类型判断函数封装" class="headerlink" title="类型判断函数封装"></a>类型判断函数封装</h1><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">typeOf</span>(<span class="params">obj</span>) </span>&#123;</span><br><span class="line">  <span class="keyword">const</span> toString = <span class="built_in">Object</span>.prototype.toString;</span><br><span class="line">  <span class="keyword">const</span> map = &#123;</span><br><span class="line">    <span class="string">'[object Boolean]'</span>: <span class="string">'boolean'</span>,</span><br><span class="line">    <span class="string">'[object Number]'</span>: <span class="string">'number'</span>,</span><br><span class="line">    <span class="string">'[object String]'</span>: <span class="string">'string'</span>,</span><br><span class="line">    <span class="string">'[object Function]'</span>: <span class="string">'function'</span>,</span><br><span class="line">    <span class="string">'[object Array]'</span>: <span class="string">'array'</span>,</span><br><span class="line">    <span class="string">'[object Date]'</span>: <span class="string">'date'</span>,</span><br><span class="line">    <span class="string">'[object RegExp]'</span>: <span class="string">'regExp'</span>,</span><br><span class="line">    <span class="string">'[object Undefined]'</span>: <span class="string">'undefined'</span>,</span><br><span class="line">    <span class="string">'[object Null]'</span>: <span class="string">'null'</span>,</span><br><span class="line">    <span class="string">'[object Object]'</span>: <span class="string">'object'</span></span><br><span class="line">  &#125;;</span><br><span class="line">  <span class="keyword">return</span> map[toString.call(obj)];</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;类型判断函数封装&quot;&gt;&lt;a href=&quot;#类型判断函数封装&quot; class=&quot;headerlink&quot; title=&quot;类型判断函数封装&quot;&gt;&lt;/a&gt;类型判断函数封装&lt;/h1&gt;&lt;figure class=&quot;highlight js&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class
+      
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>微信小程序开发整理总结</title>
