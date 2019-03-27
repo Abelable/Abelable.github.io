@@ -89,7 +89,7 @@
 <meta property="og:description" content="HTML和CSS部分实现垂直居中 绝对定位+负外边距 绝对定位+transform 1234567891011121314.wrapper &amp;#123;    position: relative;    width: 200px;    height: 200px;    border: 1px solid black;&amp;#125;.content &amp;#123;    position: abs">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="https://i.imgur.com/pBDopux.png">
-<meta property="og:updated_time" content="2019-03-27T07:27:03.522Z">
+<meta property="og:updated_time" content="2019-03-27T07:32:40.698Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="前端基础整理">
 <meta name="twitter:description" content="HTML和CSS部分实现垂直居中 绝对定位+负外边距 绝对定位+transform 1234567891011121314.wrapper &amp;#123;    position: relative;    width: 200px;    height: 200px;    border: 1px solid black;&amp;#125;.content &amp;#123;    position: abs">
@@ -465,7 +465,7 @@
 </ol>
 <h2 id="浏览器部分"><a href="#浏览器部分" class="headerlink" title="浏览器部分"></a>浏览器部分</h2><h3 id="跨域"><a href="#跨域" class="headerlink" title="跨域"></a>跨域</h3><ul>
 <li><p>JSONP：利用 <script> 标签没有跨域限制的漏洞</p>
-<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&lt;script src=<span class="string">"http://domain/api?param1=a&amp;param2=b&amp;callback=jsonp"</span>&gt;&lt;/script&gt;</span><br><span class="line">&lt;script&gt;</span><br><span class="line">    <span class="function"><span class="keyword">function</span> <span class="title">jsonp</span>(<span class="params">data</span>) </span>&#123;</span><br><span class="line">    	<span class="built_in">console</span>.log(data)</span><br><span class="line">	&#125;</span><br><span class="line">&lt;<span class="regexp">/script&gt;</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&lt;script src=<span class="string">"http://domain/api?param1=a&amp;param2=b&amp;callback=jsonp"</span>&gt;&lt;/script&gt;</span><br><span class="line">&lt;script&gt;</span><br><span class="line">  <span class="function"><span class="keyword">function</span> <span class="title">jsonp</span>(<span class="params">data</span>) </span>&#123;</span><br><span class="line">    <span class="built_in">console</span>.log(data)</span><br><span class="line">	&#125;</span><br><span class="line">&lt;<span class="regexp">/script&gt;</span></span><br></pre></td></tr></table></figure>
 </li>
 <li><p>CORS: 服务端设置<code>Access-Control-Allow-Origin</code>就可以开启 CORS</p>
 </li>
