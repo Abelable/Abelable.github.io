@@ -73,8 +73,6 @@
 
 
 
-  
-
 
   <link rel="alternate" href="/atom.xml" title="Abelable" type="application/atom+xml" />
 
@@ -83,17 +81,17 @@
 
 
 
-<meta name="description" content="类型判断函数封装12345678910111213141516function typeOf(obj) &amp;#123;  const toString = Object.prototype.toString;  const map = &amp;#123;    &apos;[object Boolean]&apos;: &apos;boolean&apos;,    &apos;[object Number]&apos;: &apos;number&apos;,    &apos;[objec">
+<meta name="description" content="类型判断12345678910111213141516function typeOf(obj) &amp;#123;  const toString = Object.prototype.toString;  const map = &amp;#123;    &apos;[object Boolean]&apos;: &apos;boolean&apos;,    &apos;[object Number]&apos;: &apos;number&apos;,    &apos;[object St">
 <meta property="og:type" content="article">
-<meta property="og:title" content="前端常用API及常用场景函数封装">
-<meta property="og:url" content="http://yoursite.com/2019/03/27/前端常用API及常用场景函数封装/index.html">
+<meta property="og:title" content="前端常用场景函数封装及常用API">
+<meta property="og:url" content="http://yoursite.com/2019/03/27/前端常用场景函数封装及常用API/index.html">
 <meta property="og:site_name" content="Abelable">
-<meta property="og:description" content="类型判断函数封装12345678910111213141516function typeOf(obj) &amp;#123;  const toString = Object.prototype.toString;  const map = &amp;#123;    &apos;[object Boolean]&apos;: &apos;boolean&apos;,    &apos;[object Number]&apos;: &apos;number&apos;,    &apos;[objec">
+<meta property="og:description" content="类型判断12345678910111213141516function typeOf(obj) &amp;#123;  const toString = Object.prototype.toString;  const map = &amp;#123;    &apos;[object Boolean]&apos;: &apos;boolean&apos;,    &apos;[object Number]&apos;: &apos;number&apos;,    &apos;[object St">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-03-27T01:34:13.074Z">
+<meta property="og:updated_time" content="2019-03-27T03:46:33.295Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="前端常用API及常用场景函数封装">
-<meta name="twitter:description" content="类型判断函数封装12345678910111213141516function typeOf(obj) &amp;#123;  const toString = Object.prototype.toString;  const map = &amp;#123;    &apos;[object Boolean]&apos;: &apos;boolean&apos;,    &apos;[object Number]&apos;: &apos;number&apos;,    &apos;[objec">
+<meta name="twitter:title" content="前端常用场景函数封装及常用API">
+<meta name="twitter:description" content="类型判断12345678910111213141516function typeOf(obj) &amp;#123;  const toString = Object.prototype.toString;  const map = &amp;#123;    &apos;[object Boolean]&apos;: &apos;boolean&apos;,    &apos;[object Number]&apos;: &apos;number&apos;,    &apos;[object St">
 
 
 
@@ -123,13 +121,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2019/03/27/前端常用API及常用场景函数封装/"/>
+  <link rel="canonical" href="http://yoursite.com/2019/03/27/前端常用场景函数封装及常用API/"/>
 
 
 
 
 
-  <title>前端常用API及常用场景函数封装 | Abelable</title>
+  <title>前端常用场景函数封装及常用API | Abelable</title>
   
 
 
@@ -236,7 +234,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/03/27/前端常用API及常用场景函数封装/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/03/27/前端常用场景函数封装及常用API/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Abelable">
@@ -253,7 +251,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">前端常用API及常用场景函数封装</h1>
+          <h1 class="post-title" itemprop="name headline">前端常用场景函数封装及常用API</h1>
         
 
         <div class="post-meta">
@@ -303,7 +301,7 @@
       
 
       
-        <h1 id="类型判断函数封装"><a href="#类型判断函数封装" class="headerlink" title="类型判断函数封装"></a>类型判断函数封装</h1><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">typeOf</span>(<span class="params">obj</span>) </span>&#123;</span><br><span class="line">  <span class="keyword">const</span> toString = <span class="built_in">Object</span>.prototype.toString;</span><br><span class="line">  <span class="keyword">const</span> map = &#123;</span><br><span class="line">    <span class="string">'[object Boolean]'</span>: <span class="string">'boolean'</span>,</span><br><span class="line">    <span class="string">'[object Number]'</span>: <span class="string">'number'</span>,</span><br><span class="line">    <span class="string">'[object String]'</span>: <span class="string">'string'</span>,</span><br><span class="line">    <span class="string">'[object Function]'</span>: <span class="string">'function'</span>,</span><br><span class="line">    <span class="string">'[object Array]'</span>: <span class="string">'array'</span>,</span><br><span class="line">    <span class="string">'[object Date]'</span>: <span class="string">'date'</span>,</span><br><span class="line">    <span class="string">'[object RegExp]'</span>: <span class="string">'regExp'</span>,</span><br><span class="line">    <span class="string">'[object Undefined]'</span>: <span class="string">'undefined'</span>,</span><br><span class="line">    <span class="string">'[object Null]'</span>: <span class="string">'null'</span>,</span><br><span class="line">    <span class="string">'[object Object]'</span>: <span class="string">'object'</span></span><br><span class="line">  &#125;;</span><br><span class="line">  <span class="keyword">return</span> map[toString.call(obj)];</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+        <h1 id="类型判断"><a href="#类型判断" class="headerlink" title="类型判断"></a>类型判断</h1><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">function</span> <span class="title">typeOf</span>(<span class="params">obj</span>) </span>&#123;</span><br><span class="line">  <span class="keyword">const</span> toString = <span class="built_in">Object</span>.prototype.toString;</span><br><span class="line">  <span class="keyword">const</span> map = &#123;</span><br><span class="line">    <span class="string">'[object Boolean]'</span>: <span class="string">'boolean'</span>,</span><br><span class="line">    <span class="string">'[object Number]'</span>: <span class="string">'number'</span>,</span><br><span class="line">    <span class="string">'[object String]'</span>: <span class="string">'string'</span>,</span><br><span class="line">    <span class="string">'[object Function]'</span>: <span class="string">'function'</span>,</span><br><span class="line">    <span class="string">'[object Array]'</span>: <span class="string">'array'</span>,</span><br><span class="line">    <span class="string">'[object Date]'</span>: <span class="string">'date'</span>,</span><br><span class="line">    <span class="string">'[object RegExp]'</span>: <span class="string">'regExp'</span>,</span><br><span class="line">    <span class="string">'[object Undefined]'</span>: <span class="string">'undefined'</span>,</span><br><span class="line">    <span class="string">'[object Null]'</span>: <span class="string">'null'</span>,</span><br><span class="line">    <span class="string">'[object Object]'</span>: <span class="string">'object'</span></span><br><span class="line">  &#125;;</span><br><span class="line">  <span class="keyword">return</span> map[toString.call(obj)];</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <h1 id="数组去重"><a href="#数组去重" class="headerlink" title="数组去重"></a>数组去重</h1><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">return</span> <span class="built_in">Array</span>.from(<span class="keyword">new</span> <span class="built_in">Set</span>(arr))</span><br></pre></td></tr></table></figure>
       
     </div>
@@ -502,7 +500,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#类型判断函数封装"><span class="nav-number">1.</span> <span class="nav-text">类型判断函数封装</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#数组去重"><span class="nav-number">2.</span> <span class="nav-text">数组去重</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#类型判断"><span class="nav-number">1.</span> <span class="nav-text">类型判断</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#数组去重"><span class="nav-number">2.</span> <span class="nav-text">数组去重</span></a></li></ol></div>
             
 
           </div>
