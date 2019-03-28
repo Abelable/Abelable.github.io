@@ -90,7 +90,7 @@
 <meta property="og:site_name" content="Abelable">
 <meta property="og:description" content="常用性能优化方案 规范代码 CSS文件放在head中 script标签放在body底部   减少http请求 代码合并压缩   减少首屏资源加载 图片懒加载 路由懒加载   静态资源处理 用CDN加载静态资源：注意CDN域名要与主站不同，否则每次请求都会带上主站的Cookie 小图可以使用base64的方式写入文件中   减少dom操作 事件代理   合理利用缓存机制 大部分场景：强缓存配合协商缓">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-03-28T15:31:54.824Z">
+<meta property="og:updated_time" content="2019-03-28T15:37:10.740Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="前端性能优化总结">
 <meta name="twitter:description" content="常用性能优化方案 规范代码 CSS文件放在head中 script标签放在body底部   减少http请求 代码合并压缩   减少首屏资源加载 图片懒加载 路由懒加载   静态资源处理 用CDN加载静态资源：注意CDN域名要与主站不同，否则每次请求都会带上主站的Cookie 小图可以使用base64的方式写入文件中   减少dom操作 事件代理   合理利用缓存机制 大部分场景：强缓存配合协商缓">
@@ -343,7 +343,7 @@
 <li>使用长cache，减少重定向</li>
 <li>首屏优化，保证首屏加载数据小于14kb</li>
 <li>不滥用web字体</li>
-<li>长列表滚动优化：长列表滚动问题，是移动端需要面对的，IOS尽量使用局部滚动，android尽量使用全局滚动。同时，需要给body添加上-webkit-overflow-scrolling: touch来优化移动段的滚动。</li>
+<li>长列表滚动优化：IOS尽量使用局部滚动，android尽量使用全局滚动。同时，给body添加上-webkit-overflow-scrolling: touch来优化移动段的滚动。</li>
 <li>使用touchstart、touchend代替click：click在移动端会有300ms延时</li>
 <li>开启GPU渲染加速：可以使用css中的translateZ设定，来欺骗浏览器，让其帮忙开启GPU加速，加快渲染进程</li>
 </ul>
@@ -598,7 +598,7 @@
 &nbsp;|&nbsp;
 <div class="theme-info">
   <div class="powered-by"></div>
-  <span class="post-count">博客全站共4.7k字</span>
+  <span class="post-count">博客全站共4.6k字</span>
 </div>
 
         
