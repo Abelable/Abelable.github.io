@@ -81,17 +81,17 @@
 
 
 
-<meta name="description" content="项目源码：https://github.com/Abelable/vue-music  项目中用的技术栈 Vue：MVVM框架 Vue-Router：前端路由 Vuex：状态管理 Webpack：构建工具 ES6：源码 Stylus：CSS预处理工具 axios + Node.js：代理后端请求  项目中用到的第三方库 better-scroll jsonp lyric-parser js-ba">
+<meta name="description" content="项目源码：https://github.com/Abelable/vue-music  项目技术栈Vue Vue-Router Vuex axios ES6 Stylus Webpack  项目中用到的第三方库 better-scroll jsonp lyric-parser js-base64 storage create-keyframe-animation  项目简介 推荐页 上部分是一个">
 <meta property="og:type" content="article">
-<meta property="og:title" content="移动端音乐播放器（MobileWeb）">
+<meta property="og:title" content="慕课网--音乐播放器">
 <meta property="og:url" content="http://yoursite.com/2018/07/16/vue-music/index.html">
 <meta property="og:site_name" content="Abelable">
-<meta property="og:description" content="项目源码：https://github.com/Abelable/vue-music  项目中用的技术栈 Vue：MVVM框架 Vue-Router：前端路由 Vuex：状态管理 Webpack：构建工具 ES6：源码 Stylus：CSS预处理工具 axios + Node.js：代理后端请求  项目中用到的第三方库 better-scroll jsonp lyric-parser js-ba">
+<meta property="og:description" content="项目源码：https://github.com/Abelable/vue-music  项目技术栈Vue Vue-Router Vuex axios ES6 Stylus Webpack  项目中用到的第三方库 better-scroll jsonp lyric-parser js-base64 storage create-keyframe-animation  项目简介 推荐页 上部分是一个">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-03-26T09:10:04.978Z">
+<meta property="og:updated_time" content="2019-03-28T14:13:04.387Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="移动端音乐播放器（MobileWeb）">
-<meta name="twitter:description" content="项目源码：https://github.com/Abelable/vue-music  项目中用的技术栈 Vue：MVVM框架 Vue-Router：前端路由 Vuex：状态管理 Webpack：构建工具 ES6：源码 Stylus：CSS预处理工具 axios + Node.js：代理后端请求  项目中用到的第三方库 better-scroll jsonp lyric-parser js-ba">
+<meta name="twitter:title" content="慕课网--音乐播放器">
+<meta name="twitter:description" content="项目源码：https://github.com/Abelable/vue-music  项目技术栈Vue Vue-Router Vuex axios ES6 Stylus Webpack  项目中用到的第三方库 better-scroll jsonp lyric-parser js-base64 storage create-keyframe-animation  项目简介 推荐页 上部分是一个">
 
 
 
@@ -127,7 +127,7 @@
 
 
 
-  <title>移动端音乐播放器（MobileWeb） | Abelable</title>
+  <title>慕课网--音乐播放器 | Abelable</title>
   
 
 
@@ -251,7 +251,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">移动端音乐播放器（MobileWeb）</h1>
+          <h1 class="post-title" itemprop="name headline">慕课网--音乐播放器</h1>
         
 
         <div class="post-meta">
@@ -304,15 +304,7 @@
         <blockquote>
 <p>项目源码：<a href="https://github.com/Abelable/vue-music" target="_blank" rel="noopener">https://github.com/Abelable/vue-music</a></p>
 </blockquote>
-<h2 id="项目中用的技术栈"><a href="#项目中用的技术栈" class="headerlink" title="项目中用的技术栈"></a>项目中用的技术栈</h2><ul>
-<li><code>Vue</code>：MVVM框架</li>
-<li><code>Vue-Router</code>：前端路由</li>
-<li><code>Vuex</code>：状态管理</li>
-<li><code>Webpack</code>：构建工具</li>
-<li><code>ES6</code>：源码</li>
-<li><code>Stylus</code>：CSS预处理工具</li>
-<li><code>axios + Node.js</code>：代理后端请求</li>
-</ul>
+<h2 id="项目技术栈"><a href="#项目技术栈" class="headerlink" title="项目技术栈"></a>项目技术栈</h2><p><code>Vue</code> <code>Vue-Router</code> <code>Vuex</code> <code>axios</code> <code>ES6</code> <code>Stylus</code> <code>Webpack</code> </p>
 <h2 id="项目中用到的第三方库"><a href="#项目中用到的第三方库" class="headerlink" title="项目中用到的第三方库"></a>项目中用到的第三方库</h2><ul>
 <li><a href="https://github.com/ustbhuangyi/better-scroll" target="_blank" rel="noopener">better-scroll</a></li>
 <li><a href="https://github.com/webmodules/jsonp" target="_blank" rel="noopener">jsonp</a></li>
@@ -385,6 +377,23 @@
 </ul>
 </li>
 </ul>
+<h2 id="项目知识点整理"><a href="#项目知识点整理" class="headerlink" title="项目知识点整理"></a>项目知识点整理</h2><ul>
+<li><p>数据的变化,到dom的变化,大概耗时17ms，所以，一般倒计时20ms后执行需要操作的函数。</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">watch: &#123;</span><br><span class="line">  data() &#123;</span><br><span class="line">    setTimeout(<span class="function"><span class="params">()</span> =&gt;</span> &#123;</span><br><span class="line">          <span class="keyword">this</span>._calculateHeight()</span><br><span class="line">     &#125;, <span class="number">20</span>)</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>x|0 代表向下取整</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">const</span> interval = interval | <span class="number">0</span> <span class="comment">//代表向下取整</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>获取当前的时间戳</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">+<span class="keyword">new</span> <span class="built_in">Date</span>()</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>设置垂直水平居中</p>
+<figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="selector-tag">position</span>: <span class="selector-tag">absolute</span></span><br><span class="line"><span class="selector-tag">top</span>: 50%</span><br><span class="line"><span class="selector-tag">left</span>: 50%</span><br><span class="line"><span class="selector-tag">transform</span>: <span class="selector-tag">translate</span>(<span class="selector-tag">-50</span>%, <span class="selector-tag">-50</span>%)</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>this.$watch() 和watch钩子的区别:</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">created() &#123;</span><br><span class="line">  <span class="keyword">this</span>.$watch(<span class="string">'query'</span>, debounce(<span class="function">(<span class="params">newQuery</span>) =&gt;</span> &#123;</span><br><span class="line">    <span class="keyword">this</span>.$emit(<span class="string">'query'</span>, newQuery)</span><br><span class="line">  &#125;, <span class="number">200</span>))</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
 <h2 id="学习参考"><a href="#学习参考" class="headerlink" title="学习参考"></a>学习参考</h2><ul>
 <li><a href="https://coding.imooc.com/class/107.html" target="_blank" rel="noopener">Vue 2.0高级实战 开发移动端音乐WebAPP</a></li>
 <li><a href="https://github.com/Aaron0525/Vue-music" target="_blank" rel="noopener">Vue2.0搭建的移动端音乐APP</a></li>
@@ -454,8 +463,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2018/07/22/Interview-questions/" rel="prev" title="前端基础整理">
-                前端基础整理 <i class="fa fa-chevron-right"></i>
+              <a href="/2018/07/22/Interview-questions/" rel="prev" title="前端JS基础整理">
+                前端JS基础整理 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -534,7 +543,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">4</span>
+                  <span class="site-state-item-count">5</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -588,7 +597,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#项目中用的技术栈"><span class="nav-number">1.</span> <span class="nav-text">项目中用的技术栈</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#项目中用到的第三方库"><span class="nav-number">2.</span> <span class="nav-text">项目中用到的第三方库</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#项目简介"><span class="nav-number">3.</span> <span class="nav-text">项目简介</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#学习参考"><span class="nav-number">4.</span> <span class="nav-text">学习参考</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#项目技术栈"><span class="nav-number">1.</span> <span class="nav-text">项目技术栈</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#项目中用到的第三方库"><span class="nav-number">2.</span> <span class="nav-text">项目中用到的第三方库</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#项目简介"><span class="nav-number">3.</span> <span class="nav-text">项目简介</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#项目知识点整理"><span class="nav-number">4.</span> <span class="nav-text">项目知识点整理</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#学习参考"><span class="nav-number">5.</span> <span class="nav-text">学习参考</span></a></li></ol></div>
             
 
           </div>
@@ -636,7 +645,7 @@
 &nbsp;|&nbsp;
 <div class="theme-info">
   <div class="powered-by"></div>
-  <span class="post-count">博客全站共3.9k字</span>
+  <span class="post-count">博客全站共4.0k字</span>
 </div>
 
         
